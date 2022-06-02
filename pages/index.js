@@ -28,7 +28,7 @@ const QUERY = gql`
     }
   }`
 
-export async function getStaticProps(){
+export async function getStaticProps() {
   const { posts } = await graphcms.request(QUERY);
   return {
     props: {
@@ -50,7 +50,13 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         { posts.map((post) => (
-          <BlogCard title={post.title} author={post.author} coverPhoto={post.coverPhoto} key={post.id} datePublished={post.datePublished} slug={post.slug} />
+          <BlogCard
+            title={post.title}
+            author={post.author}
+            coverPhoto={post.coverPhoto}
+            key={post.id}
+            datePublished={post.datePublished}
+            slug={post.slug} />
         )) }
       </main>
     </div>
