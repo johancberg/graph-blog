@@ -1,4 +1,5 @@
 import styles from '../../styles/Slug.module.css'
+import Image from 'next/image'
 import { GraphQLClient, gql } from 'graphql-request'
 
 const graphcms = new GraphQLClient('https://api-eu-central-1.graphcms.com/v2/cl3xdwp800e0u01z01nlj1uzb/master')
@@ -59,12 +60,14 @@ export async function getStaticProps({ params }) {
 export default function Slug({ post }){
     return (
     <main className={styles.blog}>
-        <img src={post.coverPhoto.url} className={styles.cover} alt="" />
+        <Image src={post.coverPhoto.url} className={styles.cover} alt="" width={600} height={300} />
         <div className={styles.title}>
-            <img src={post.author.avatar.url} alt="" />
-            <div className={styles.authtext}>
-                <h6>By {post.author.name}</h6>
-                <h6 className={styles.date}>{post.datePublished}</h6>
+            <div className={styles.authdetails}>
+                <Image src={post.author.avatar.url} alt="" width={40} height={40} />
+                <div className={styles.authtext}>
+                    <h6>By {post.author.name}</h6>
+                    <h6 className={styles.date}>{post.datePublished}</h6>
+                </div>
             </div>
         </div>
         <h2>{post.title}</h2>
