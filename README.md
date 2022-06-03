@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This is my first app with the purpose to learn GraphQL and using it alongside a JS-framework. The code has though a beginning been developed by following [Dev Ed's Next.js & GraphQL tutorial](https://www.youtube.com/watch?v=Dc7LAgqy1_E).
+
 ## Getting Started
 
 First, run the development server:
