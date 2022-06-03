@@ -60,7 +60,7 @@ export async function getStaticProps({ params }) {
 export default function Slug({ post }){
     return (
     <main className={styles.blog}>
-        <Image src={post.coverPhoto.url} className={styles.cover} alt="" width={600} height={300} />
+        <Image src={post.coverPhoto.url} className={styles.cover} alt="" width={800} height={450} />
         <div className={styles.title}>
             <div className={styles.authdetails}>
                 <Image src={post.author.avatar.url} alt="" width={40} height={40} />

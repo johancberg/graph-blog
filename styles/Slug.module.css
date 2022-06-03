@@ -1,5 +1,6 @@
 .blog {
-    margin: 0 2em;
+    padding: 1em 3em 0 3em;
+    background-color: rgb(188, 216, 234);
 }
 
 .title {
