@@ -8,6 +8,8 @@ export default function BlogCard({ title, author, coverPhoto, datePublished, slu
             <Link href={"/posts/" + slug}>
                 <div className={styles.imgContainer}>
                     <Image src={coverPhoto.url} alt="" width={600} height={300} />
+                    <p className={styles.title}>{ title }</p>
+                    <span>{ author.name }</span> <span>{ datePublished }</span>
                 </div>
             </Link>
         </div>

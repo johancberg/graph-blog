@@ -1,0 +1,14 @@
+.imgContainer {
+    margin: 1em 0 3em;
+}
+
+.title {
+    margin: 0.4em 0 0.2em; 
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.imgContainer span {
+    font-size: 0.8rem;
+    margin-right: 0.9em;
+}
